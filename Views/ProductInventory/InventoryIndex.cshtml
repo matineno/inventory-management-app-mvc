@@ -1,0 +1,24 @@
+﻿@model IEnumerable<martins_aleogho_IntroToLinqAndAsp.netLab1.Models.ProductInventoryViewModel>
+
+<h2>Products with Inventory</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.Price</td>
+                <td>@item.StockQuantity</td>
+            </tr>
+        }
+    </tbody>
+</table>
